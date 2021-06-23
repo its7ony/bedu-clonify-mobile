@@ -17,6 +17,6 @@
 Dentro de ellas se adjuntarán los trabajos realizados en los retos finales y postworks de acuerdo a las sesiones correspondientes. Al finalizar, generaremos un archivo con la implementación de cada uno de estos módulos.
 
 # Canales Oficiales 
-[Tablero de Trello](https://trello.com/b/EzMLhMBT/clontify) 
-[Google Docs](https://docs.google.com/document/d/1R1M29gaL6Bf7tFhNhKQh9lBJs_MPKKP8eNI6U9XA390/edit?usp=sharing) 
-[Grupo de WhatsApp](https://chat.whatsapp.com/KqiYj3A7bbjL80JGnsgCgr) 
+- [Tablero de Trello](https://trello.com/b/EzMLhMBT/clontify) 
+- [Google Docs](https://docs.google.com/document/d/1R1M29gaL6Bf7tFhNhKQh9lBJs_MPKKP8eNI6U9XA390/edit?usp=sharing) 
+- [Grupo de WhatsApp](https://chat.whatsapp.com/KqiYj3A7bbjL80JGnsgCgr) 
