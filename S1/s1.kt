@@ -1,10 +1,12 @@
 package Postwork
 fun main() {
-//Requisitos del postwork
-// Abstraer el concepto de ciclos y condicionales.
-//Manejar de forma básica el IDE.
-//Aplicar variables y realizar operaciones sobre ellas.
-//Desarrollo
+/*Requisitos del postwork
+ Abstraer el concepto de ciclos y condicionales.
+ Manejar de forma básica el IDE.
+ Aplicar variables y realizar operaciones sobre ellas.
+*/
+
+// Desarrollo
 // Elementos del perfil del usuario para registrarse en Clonifi
     var correoElectronico="jorge@gmail.com"
     var contraseña = "Jorge123"
