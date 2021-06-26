@@ -2,12 +2,11 @@ package s3
 
 /*
 --------Artista----------
-- nombreArtista: String -
-- listaAlbunes: List    -
-- totalCanciones        -
+- buscarArtista: String -
+- seleccionarAlbum: List-
 -------------------------
-- retornarArtista()     -
-- mostrarAlbunes()      -
+- buscarArtista()       -
+- seleccionarAlbum()    -
 - retornarAlbum()       -
 -------------------------
 
@@ -29,9 +28,5 @@ class Artista(var nombre: String, var listaDeAlbumes: List<String>){
         return nombreAl
     }
 
-    fun mostrarAlbunes(){
-        println("Albunes disponibles: ")
-        println(listaDeAlbumes)
-    }
 
 }

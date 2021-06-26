@@ -14,6 +14,12 @@ OBJETIVO
 Diseñar clases con propiedades y métodos que representen correctamente un objeto.
 Abstraer la lógica del proyecto final al paradigma que brinda POO
 
+Opciones Disponibles
+
+1 Artista : Metallica
+2 Albunes : Master of Puppets y Metallica
+3 Canciones : Enter Sadman,The Unforgiven, Wherever I May Roam,Battery, Master of Puppets, Welcome, Home y Orion.
+
 */
 
 fun main(){
@@ -26,8 +32,8 @@ fun main(){
     val masterOfPuppets= listOf("Battery","Master of Puppets","Welcome Home","Orion")
 
     //Album
-    val album=Album(1,"Master of Puppets","Trash Metal",1996,masterOfPuppets)
-    val album1=Album(1,"Metallica","Trash Metal",1991,metallica)
+    val album=Album("Master of Puppets","Trash Metal",1996,masterOfPuppets)
+    val album1=Album("Metallica","Trash Metal",1991,metallica)
 
     //Artista
     val artista1=Artista("Metallica",metallicaAlbunes)
@@ -51,9 +57,8 @@ fun main(){
     println("------------------3) Buscar por Cancion--------------------")
     println("------------------4) Salir --------------------------------")
     print("Opcion: ")
-    val opcion= readLine()!!.toInt()
 
-    when(opcion){
+    when(readLine()!!.toInt()){
         1-> {
             if (artista1.buscarArtista()){
                 when(artista1.seleccionarAlbum()){

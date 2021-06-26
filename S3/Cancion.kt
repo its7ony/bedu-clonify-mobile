@@ -2,12 +2,10 @@ package s3
 
 /*
 ----------Cancion---------
-- id: Int                -
-- nombre: String         -
-- duracion: String       -
-- letra: Strinf          -
+- listaCanciones: List   -
 --------------------------
-- reproducirAlbum()      -
+- mostrarCancion()       -
+- seleccionarCancion()   -
 --------------------------
 
 */

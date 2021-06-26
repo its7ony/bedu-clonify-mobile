@@ -3,20 +3,18 @@ package s3
 /*
 
 -----------Album----------
-- id: Int                -
-- listaAlbunes: String   -
-- listaCanciones: String -
+- nombre: String         -
+- genero: String         -
+- lanzamiento: Int       -
+- listaDeCanciones:List  -
 --------------------------
-- mostrarAlbum()         -
 - reproducirAlbum()      -
-- seleccionarAlbum()     -
+- buscarAlbum()          -
 --------------------------
 
 */
 
-class Album (var id: Int, var nombre: String, var genero: String, var lanzamiento: Int, var listaDeCanciones: List<String> ){
-
-
+class Album ( var nombre: String, var genero: String, var lanzamiento: Int, var listaDeCanciones: List<String> ){
 
     fun reproducirAlbum(){
         var contador=0
