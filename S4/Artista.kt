@@ -1,6 +1,5 @@
 package s4
 
-
 abstract class Artista(val nombre: String, val album: String, val listaCanciones: List<String>){
 
     abstract fun  reproducirArtista()
