@@ -9,7 +9,7 @@ class LyricsController {
 
     fun getLyricsByTrackId(trackId: Int, callback: (Lyrics?) -> Unit) {
         try {
-            val response = makeHTTPRequest("get_lyrics_by_track_id", trackId, false)
+            val response = makeHTTPRequest("get_lyrics_by_track_id", trackId)
             if (getStatusCode(response) == 200) {
                 val jsonResponse = getObjectResponse(response, "lyrics")
 

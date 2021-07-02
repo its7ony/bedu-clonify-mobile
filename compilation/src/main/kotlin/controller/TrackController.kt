@@ -11,7 +11,7 @@ class TrackController {
 
     fun getTracksByAlbumId(albumId: Int, callback: (List<Track>?) -> Unit){
         try {
-            val response = makeHTTPRequest("get_tracks_by_album_id",albumId,false)
+            val response = makeHTTPRequest("get_tracks_by_album_id",albumId)
             if(getStatusCode(response) == 200){
                 val jsonResponse = getArrayResponse(response,"track_list")
                 if (jsonResponse.size() > 0){
@@ -48,7 +48,7 @@ class TrackController {
 
     fun getTracksByTop5(callback: (List<Track>?) -> Unit){
         try {
-            val response = makeHTTPRequest("get_tracks_by_top_5","",false)
+            val response = makeHTTPRequest("get_tracks_by_top_5","")
             if(getStatusCode(response) == 200){
                 val jsonResponse = getArrayResponse(response,"track_list")
                 if (jsonResponse.size() > 0){

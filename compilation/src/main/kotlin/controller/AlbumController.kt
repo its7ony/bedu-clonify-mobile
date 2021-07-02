@@ -12,7 +12,7 @@ class AlbumController {
 
     fun getAlbumsByArtistId(artistId: Int, callback: (List<Album>?) -> Unit) {
         try {
-            val response = makeHTTPRequest("get_albums_by_artist_id",artistId,false)
+            val response = makeHTTPRequest("get_albums_by_artist_id",artistId)
             if (getStatusCode(response) == 200) {
                 val jsonResponse = getArrayResponse(response,"album_list")
                 if (jsonResponse.size() > 0) {
