@@ -10,14 +10,14 @@ fun validarAutenticacion() {
 
 fun registrarUsuario() {
     var usuario: User? = null
-    println("Inicio de Sesión")
-    println("Ingrese su nombre. Ej Luis Robles")
+    registerUser()
+    print(" ► Ingrese su nombre: ")
     val nombre = readLine().toString()
-    println("Ingrese su correo electrónico. Ej luis.robles@gmail.com")
+    print(" ► Ingrese su correo electrónico: ")
     val email = readLine().toString()
-    println("Ingrese su contraseña. Ej *****")
+    print(" ► Ingrese su contraseña: ")
     val password = readLine().toString()
-
+    buttonBox()
     if (nombre != "" && email != "" && password != "") {
         usuario = User(nombre, email, password)
     }

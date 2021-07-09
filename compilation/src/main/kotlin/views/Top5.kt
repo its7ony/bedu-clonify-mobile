@@ -6,7 +6,7 @@ import helpers.trackController
 
 fun top5(opcion: Int) {
     trackController.getTracksByTop5 { songList ->
-        println("TOP 5")
+        topList()
         if (songList.isNullOrEmpty()) noHayResultados(opcion) else seleccionarCancion(songList, opcion=opcion)
     }
 }

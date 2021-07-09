@@ -7,7 +7,7 @@ import helpers.seleccionarAlbum
 
 
 fun buscarArtista(opcion: Int) {
-    print("Ingrese el nombre de un artista: ")
+    print("► Ingrese el nombre de un Artista: ")
     val artistName = readLine()
     if (artistName.toString().trim() != "" ) {
         artistController.getArtistByName(artistName!!) { artist ->

@@ -5,7 +5,7 @@ import helpers.seleccionarCancion
 import helpers.trackController
 
 fun buscarCancion(opcion: Int) {
-    print("Ingrese el nombre de una canción: ")
+    print("► Ingrese el nombre de la cancion: ")
     val songName = readLine()
     if (songName.toString().trim() != "") {
         trackController.getTracksByName(songName!!) { songList ->
@@ -13,4 +13,3 @@ fun buscarCancion(opcion: Int) {
         }
     }
 }
-

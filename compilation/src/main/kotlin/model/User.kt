@@ -1,7 +1,13 @@
 package model
 
+import views.buttonBox
+import views.topBox
+
+
 class User(nombre: String, email: String, password: String){
     init {
-        println("Bienvenido $nombre")
+        topBox()
+        println("                                 ★ Bienvenido $nombre")
+        buttonBox()
     }
 }
