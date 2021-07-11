@@ -11,18 +11,16 @@ fun validarAutenticacion() {
 fun registrarUsuario() {
     var usuario: User? = null
     registerUser()
-    print(" ► Ingrese su nombre: ")
+    print(" ► Ingrese su usuario: ")
     val nombre = readLine().toString()
-    print(" ► Ingrese su correo electrónico: ")
-    val email = readLine().toString()
     print(" ► Ingrese su contraseña: ")
     val password = readLine().toString()
     buttonBox()
-    if (nombre != "" && email != "" && password != "") {
-        usuario = User(nombre, email, password)
+    if (nombre != "" && password != "") {
+        usuario = User(nombre,password)
     }
 
-    if (usuario != null) sesionActiva = true else return
+    if (usuario != null) sesionActiva = true else validarAutenticacion()
 
     validarAutenticacion()
 }

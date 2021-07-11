@@ -4,7 +4,7 @@ import views.buttonBox
 import views.topBox
 
 
-class User(nombre: String, email: String, password: String){
+class User(nombre: String, password: String){
     init {
         topBox()
         println("                                 ★ Bienvenido $nombre")

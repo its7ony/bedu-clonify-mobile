@@ -26,6 +26,8 @@ fun seleccionarCancion(songList: List<Track>, albumName: String = "", opcion: In
         val trackFilter = songList.filter { it.track_id == trackId.toInt() }
         val track = if (trackFilter.isNotEmpty()) trackFilter.first() else null
         if (track == null) noHayResultados(opcion) else reproducirCancion(track)
+        topBox()
+        menuPrincipal()
     }else vuelveAIntentar()
 }
 
@@ -40,6 +42,8 @@ fun reproducirCancion(track: Track) {
             topBox()
             print("Letra $explicit: ${trackLyrics.lyrics_body}\n\n")
             buttonBox()
+            topBox()
+            menuPrincipal()
         }
     }
 }
