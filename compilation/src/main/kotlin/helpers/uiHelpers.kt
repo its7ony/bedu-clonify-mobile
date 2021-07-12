@@ -33,9 +33,6 @@ fun seleccionarCancion(songList: List<Track>, albumName: String = "", opcion: In
 
 
 fun reproducirCancion(track: Track) {
-    playTop()
-    println("  ♫  ${track.track_name} de ${track.artist_name} ♫ ")
-    playButton()
     lyricsController.getLyricsByTrackId(track.track_id) { trackLyrics ->
         if (trackLyrics != null && trackLyrics.lyrics_body != "") {
             val explicit = if (trackLyrics.explicit) "\uD83C\uDD74" else ""
@@ -43,9 +40,14 @@ fun reproducirCancion(track: Track) {
             print("Letra $explicit: ${trackLyrics.lyrics_body}\n\n")
             buttonBox()
             topBox()
-            menuPrincipal()
+
         }
     }
+    playTop()
+    println("  ♫  ${track.track_name} de ${track.artist_name} ♫ ")
+    playButton()
+    topBox()
+    menuPrincipal()
 }
 
 

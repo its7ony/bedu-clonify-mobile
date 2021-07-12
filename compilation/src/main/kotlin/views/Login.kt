@@ -1,17 +1,11 @@
 package views
 
 import helpers.sesionActiva
-import kotlinx.coroutines.*
 import model.User
-import kotlin.coroutines.resumeWithException
 
-fun validarAutenticacion() = runBlocking {
-    withTimeout(10_000L) {
-        repeat(10) { i ->
-            println("Cargando ${(i * 10) + 10}% ...")
-            delay(300L)
-        }
-    }
+
+fun validarAutenticacion() {
+    loading()
     if (sesionActiva) menuPrincipal() else registrarUsuario()
 }
 fun registrarUsuario() {
@@ -26,7 +20,7 @@ fun registrarUsuario() {
         usuario = User(nombre,password)
     }
 
-    if (usuario != null) sesionActiva = true else validarAutenticacion()
+    if (usuario != null) menuPrincipal() else validarAutenticacion()
 
     validarAutenticacion()
 }

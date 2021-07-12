@@ -1,5 +1,10 @@
 package views
 
+import helpers.sesionActiva
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.withTimeout
+
 fun topList(){
     println("┌───────────────────────────────────────────────────────────────────────────────────┐")
     println("│  ❮  ❱              ▷ Top 5 Canciones de esta semana ♬        Mexico ▾   \uD83D\uDDD5  \uD83D\uDDD6  \uD83D\uDDD9︎ │")
@@ -48,8 +53,9 @@ fun playTop(){
 
 fun playButton(){
     println("                                ♥       ⏮ ⏸ ⏭       ↺                               ")
-    println("│                                                                                   │")
-    println("│                ▅ ▃ ▅ ▅ ▄ ▇ ▅ █ ▅ ▇ ▂ ▃ ▁ ▁ ▅ ▃ ▅ ▅ ▄ ▅ ▇ █ ▅ ▇ ▂ ▅                │")
+    println("                                                                                     ")
+    stay()
+    println("")
     println("└───────────────────────────────────────────────────────────────────────────────────┘")
 
 }
@@ -73,4 +79,30 @@ fun goodBye(){
             "                                    ██████                                          \n" +
             "                                                                                     ")
     println("└───────────────────────────────────────────────────────────────────────────────────┘")
+}
+
+fun loading() = runBlocking {
+
+    topBox()
+    withTimeout(10_000L) {
+        repeat(10) { i ->
+            println(" ⧗ Cargando ${(i * 10) + 10}% ...")
+            delay(300L)
+        }
+    }
+    buttonBox()
+
+}
+
+fun stay() = runBlocking {
+
+    withTimeout(15_000L) {
+        repeat(10) { i ->
+            print(" ▄ ▇ ▁ ▃")
+            i*10+10
+            delay(1000L)
+        }
+    }
+
+
 }
