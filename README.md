@@ -14,7 +14,7 @@
 
 ## Este proyecto se dividirá por 8 carpetas (s1 - S8)
 
-Dentro de ellas se adjuntarán los trabajos realizados en los retos finales y postworks de acuerdo a las sesiones correspondientes. Al finalizar, generaremos un archivo con la implementación de cada uno de estos módulos.
+Dentro de ellas se adjuntarán los trabajos realizados en los retos finales y postworks de acuerdo a las sesiones correspondientes. Al finalizar, generaremos una compilación con la implementación de cada uno de estos módulos **compilation**.
 
 # Canales Oficiales 
 - [Tablero de Trello](https://trello.com/b/EzMLhMBT/clontify) 
