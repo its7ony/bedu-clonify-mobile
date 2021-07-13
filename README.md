@@ -20,3 +20,10 @@ Dentro de ellas se adjuntarán los trabajos realizados en los retos finales y po
 - [Tablero de Trello](https://trello.com/b/EzMLhMBT/clontify) 
 - [Google Docs](https://docs.google.com/document/d/1R1M29gaL6Bf7tFhNhKQh9lBJs_MPKKP8eNI6U9XA390/edit?usp=sharing) 
 - [Grupo de WhatsApp](https://chat.whatsapp.com/KqiYj3A7bbjL80JGnsgCgr) 
+- [Vídeo de YouTube](https://youtu.be/nPg3anpS6cQ) 
+
+
+# Setup Necesario para ejecutar el proyecto
+- JDK 11.0.11
+- IntelliJ 2021.1.2
+- kotlin("jvm") version 1.4.10
